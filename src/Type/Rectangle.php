@@ -8,14 +8,13 @@ class Rectangle
     {
         return new static($side);
     }
-    public function __construct(protected int $side)
-    {
-    }
+
+    public function __construct(protected int $side) {}
 
     /**
      * @return int
-     * To calculate the wide of the rectangle
-     * Untuk menghitung luas
+     *             To calculate the wide of the rectangle
+     *             Untuk menghitung luas
      */
     public function wide(): int
     {
@@ -24,8 +23,8 @@ class Rectangle
 
     /**
      * @return int
-     * To calculate the around of the rectangle
-     * Untuk menghitung keliling
+     *             To calculate the around of the rectangle
+     *             Untuk menghitung keliling
      */
     public function around(): int
     {
