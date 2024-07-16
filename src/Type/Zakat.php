@@ -2,8 +2,8 @@
 
 namespace Rizkyanfasafm\SimpleFormula\Type;
 
-class Zakat{
-
+class Zakat
+{
     protected static float $percentage = 2.5;
 
     public static function count(int $amount): self
@@ -11,10 +11,7 @@ class Zakat{
         return new static($amount);
     }
 
-    public function __construct(protected int $amount)
-    {
-
-    }
+    public function __construct(protected int $amount) {}
 
     public function calculate(): int
     {
